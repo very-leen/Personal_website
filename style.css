@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body{
+    display: flex;
+}
+#sidebar{
+    background-color:darkslateblue;
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+}
+#sidebar ul{
+    margin-top: 30px;
+    list-style: inside;
+    list-style-position: inside;
+}
+#sidebar ul li a{
+    color:rgba(156, 133, 30, 0.886);
+}
+#sidebar ul li{
+    padding-bottom: 5px;
+    color:rgba(156, 133, 30, 0.886) /* to add color to the bullet also*/
+}
+#myPic{
+    border-radius: 50%;
+    height: 40vh;
+    width: 97%;
+    padding: 10px;
+    background-color:rgba(156, 133, 30, 0.886);
+}
+#mainpage{
+    background-color:rgb(163, 151, 103);
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    overflow: auto;
+}
+.headings{
+    font-size: clamp(6vw, 3.5rem, 100px);
+    color:darkblue;
+}
+#aboutMe p{
+    margin-top: 30px;
+    font-size: clamp(2.5vw, 1.5rem, 20px);
+    color: black;
+    font-weight: 300;
+}
+#projectHeading{
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#projectSection{
+    display: grid;
+    gap: 5px;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 10% 30% 45%;
+    grid-template-rows: 100%;
+    align-items: center;
+    gap: 10px;
+    background-color:rgba(152, 139, 80, 0.886);
+    /* padding: 0 10px; */
+}
+.projects p{
+    color: darkblue;
+    font-size: 100%;
+}
+.projects h3{
+    font-size: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    background-color: darkslateblue;
+    padding: 3px;
+}
+.projects a:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+}
+@media (max-width: 768px){
+    #body{
+        display: block;
+        align-items: center;
+    }
+    #sidebar{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+    #myPic{
+        width: 25%;
+        height: 20vh;
+    }
+}
+#test{
+    padding-top: 40px;
+    width: 100%
+}
